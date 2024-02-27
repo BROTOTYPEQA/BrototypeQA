@@ -1,6 +1,6 @@
-Brototype Students Tech support Team officail Website
+Developers
+Meet the talented developers behind our project:
 
-developers 
-*1 Ashwiin Kannoth*
-*2 Umesh Kumar*
-*3 Abdul Ahad S*
+Ashwiin Kannoth
+Umesh Kumar
+Abdul Ahad S
