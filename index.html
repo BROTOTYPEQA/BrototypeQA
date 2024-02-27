@@ -8,8 +8,6 @@
   <title>Mentor Bootstrap Template - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -25,28 +23,69 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-</head>
 
+  <script>
+     function closeForm() {
+    var mainDiv = document.getElementById("mainDiv");
+    mainDiv.style.display = "none";
+  }
+  </script>
+</head>
 <body>
+<div class="main-div" id="mainDiv">
+  <button class="formclosebutton" onclick="closeForm()">x</button>
+  <form id="submit-form" action="">
+    <h1>Get In touch</h1>
+    <input type="text" id="fname" name="name" placeholder="Your name.." required>
+    <input type="text" id="lname" name="email" placeholder="Your email.." required> 
+    <select id="country" name="country">
+        <option value="Degree">Degree</option>
+        <option value="Employe">Employe</option>
+        <option value="+2">+2</option>
+        <option value="10 passout">10nth passout</option>
+        <option value="Unemployed">Unemployed</option>
+        <option value="Other">Other</option>
+    </select>
+    <input id="subject" name="subject" placeholder="Write something.." required></input>
+    <input style="background-color: white;color: black;" id="submit" type="submit" required value="Submit">
+</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzzOOvnpoovr3C0-lJAjqV_13so1GgcB7S8F5whGwY6vMtbW_im34CATdPIZ9vPyQke7w/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                window.location.href="ok.html"
+            },
+            error:function (err){
+                alert("Something Error")
+            }
+        })
+    })
+</script>
 
   <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
+    <h1 class="logo me-auto"><a href="index.html">DeveloperBuddy</a></h1>
 
-    <h1 class="logo me-auto"><a href="index.html">BROTHER QA</a></h1>
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <select name="" id="headerLanguageSelector">
+      <option value="">C</option>
+      <option value="">C++</option>
+      <option value="">Java</option>
+      <option value="">Python</option>
+      <option value="">Java Script</option>
+      <option value="">React</option>
+      <option value="">Java</option>
 
-    <nav id="navbar" class="navbar order-last order-lg-0">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
+    </select>
     </nav><!-- .navbar -->
   </div>
 </header><!-- End Header -->
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
@@ -57,36 +96,6 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            </p>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg">
       <div class="container">
@@ -342,73 +351,6 @@
 
       </div>
     </section><!-- End Popular Courses Section -->
-
-    <!-- ======= Trainers Section ======= -->
-    <section id="trainers" class="trainers">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Walter White</h4>
-                <span>Web Development</span>
-                <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Sarah Jhinson</h4>
-                <span>Marketing</span>
-                <p>
-                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>William Anderson</h4>
-                <span>Content</span>
-                <p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Trainers Section -->
 
   </main><!-- End #main -->
 
