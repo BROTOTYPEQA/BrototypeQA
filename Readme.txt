@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+Brototype Students Tech support Team officail Website
 
-Template Name: Mentor
-Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+developers 
+*1 Ashwiin Kannoth*
+*2 Umesh Kumar*
+*3 Abdul Ahad S*
