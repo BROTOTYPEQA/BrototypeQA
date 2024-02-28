@@ -964,7 +964,7 @@ section {
 }
 
 /* Input styles */
-#submit-form input, #country {
+#submit-form input, #qulity {
   width: 100%; /* Adjusted for responsiveness */
   height: 50px;
   border-radius: 5px;
@@ -989,12 +989,12 @@ section {
 }
 
 /* Select dropdown styles */
-#country {
+#qulity {
   height: 40px;
 }
 
 /* Option styles for select dropdown */
-#country option {
+#qulity option {
   background-color: black;
   color: rgb(255, 255, 255);
 }
@@ -1019,7 +1019,7 @@ section {
 }
 
 .formclosebutton{
-  margin-top: -440px;
+  margin-top: -550px;
   margin-right: -480px;
   border: none;
   background-color: red;
@@ -1034,6 +1034,33 @@ section {
   .formclosebutton{
      position: relative;
      margin: 0;
-     margin-top:-480px;
+     margin-top:-560px;
   }
+}
+
+.support-image{
+  width: 100%;
+}
+.support-btn{
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+.support-btn:hover::before{
+  content: "Contact us";
+  width: 100px;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  position: fixed;
+  margin-left: -110px;
+  font-size: 15px;
+  padding: 5px 5px 5px 5px;
 }

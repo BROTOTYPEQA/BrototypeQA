@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mentor Bootstrap Template - Index</title>
+  <title>DeveloperBuddy</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/images.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -25,30 +25,37 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <script>
-     function closeForm() {
-    var mainDiv = document.getElementById("mainDiv");
-    mainDiv.style.display = "none";
+     function OpenForm() {
+    var openCloseContact = document.getElementById("openCloseContact");
+    openCloseContact.style.display = "block";
+  }
+  function closeForm(){
+    var openCloseContact = document.getElementById("openCloseContact");
+    openCloseContact.style.display = "none";
   }
   </script>
 </head>
 <body>
-<div class="main-div" id="mainDiv">
-  <button class="formclosebutton" onclick="closeForm()">x</button>
-  <form id="submit-form" action="">
-    <h1>Get In touch</h1>
-    <input type="text" id="fname" name="name" placeholder="Your name.." required>
-    <input type="text" id="lname" name="email" placeholder="Your email.." required> 
-    <select id="country" name="country">
-        <option value="Degree">Degree</option>
-        <option value="Employe">Employe</option>
-        <option value="+2">+2</option>
-        <option value="10 passout">10nth passout</option>
-        <option value="Unemployed">Unemployed</option>
-        <option value="Other">Other</option>
-    </select>
-    <input id="subject" name="subject" placeholder="Write something.." required></input>
-    <input style="background-color: white;color: black;" id="submit" type="submit" required value="Submit">
-</form>
+<div id="openCloseContact" style="display: none;">
+  <div class="main-div" id="mainDiv">
+    <button class="formclosebutton" onclick="closeForm()">x</button>
+    <form id="submit-form" action="">
+      <h1>Tech Support</h1>
+      <input type="text" id="fname" name="Number" placeholder="Mobile Number" required>
+      <input type="text" id="number" name="Name" placeholder="Your name.." required>
+      <input type="text" id="lname" name="Email" placeholder="Your email.." required> 
+      <select id="qulity" name="Qulity">
+          <option value="Degree">Degree</option>
+          <option value="Employe">Employe</option>
+          <option value="+2">+2</option>
+          <option value="10 passout">10nth passout</option>
+          <option value="Unemployed">Unemployed</option>
+          <option value="Other">Other</option>
+      </select>
+      <input id="Mesasge" name="Mesasge" placeholder="Describe your problem.." required></input>
+      <input style="background-color: white;color: black;" id="submit" type="submit" required value="Submit">
+  </form>
+  </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -72,29 +79,19 @@
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
     <h1 class="logo me-auto"><a href="index.html">DeveloperBuddy</a></h1>
-
-    <select name="" id="headerLanguageSelector">
-      <option value="">C</option>
-      <option value="">C++</option>
-      <option value="">Java</option>
-      <option value="">Python</option>
-      <option value="">Java Script</option>
-      <option value="">React</option>
-      <option value="">Java</option>
-
-    </select>
+    <button class="support-btn" onclick="OpenForm()"><img draggable="false" class="support-image" src="assets/img/support.svg" alt=""></button>
     </nav><!-- .navbar -->
   </div>
 </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Learning Today,<br>Leading Tomorrow</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <h1>Inspire Today,<br>Innovate Tomorrow</h1>
+      <h2>We are team of Software Developers</h2>
       <a href="courses.html" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero -->
-
+   
   <main id="main">
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg">
@@ -103,22 +100,22 @@
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
             <p>Students</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Courses</p>
+            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Languages</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Events</p>
+            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Menters</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
             <p>Trainers</p>
           </div>
 
