@@ -1,0 +1,60 @@
+[33mcommit 5f41ff9d46abd117f80cb3b57310f6fdd201ac42[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msecond-branch[m[33m, [m[1;31morigin/second-branch[m[33m)[m
+Author: AHADBAVA <ahaddesgins@gmail.com>
+Date:   Wed Feb 28 10:42:15 2024 +0530
+
+    counter section removed
+
+[33mcommit 4edd1ede18335ef69f89dec479779d2d5d14873a[m
+Author: AHADBAVA <ahaddesgins@gmail.com>
+Date:   Wed Feb 28 10:40:23 2024 +0530
+
+    contact from back end finaly finished
+
+[33mcommit 0b9aa1e590f43af511e6570b851dbed1aa7f11e6[m
+Author: AHADBAVA <ahaddesgins@gmail.com>
+Date:   Tue Feb 27 21:17:13 2024 +0530
+
+    contact form added
+
+[33mcommit 6397cfe6437585d9930bc444a39f6e9763344067[m
+Merge: 24753ca 8f86d79
+Author: AHADBAVA <ahaddesgins@gmail.com>
+Date:   Tue Feb 27 14:38:13 2024 +0530
+
+    4th commit
+
+[33mcommit 24753ca3d12dd7e6f08732b4a5289bab07811143[m
+Author: AHADBAVA <ahaddesgins@gmail.com>
+Date:   Tue Feb 27 14:32:46 2024 +0530
+
+    useless files deleted !
+
+[33mcommit 8f86d791574f9b1c0170fefbd9144a9620296f3e[m
+Author: Abdul Ahad S <139561652+AHADBAVA@users.noreply.github.com>
+Date:   Tue Feb 27 13:50:18 2024 +0530
+
+    Update contact.html
+
+[33mcommit 83a75000c6e7682a7ffbaa511445bc1bf1325b40[m
+Author: Abdul Ahad S <139561652+AHADBAVA@users.noreply.github.com>
+Date:   Tue Feb 27 13:48:16 2024 +0530
+
+    Update Readme.txt
+
+[33mcommit 5fb4f9fa6f8e01c3333dfa879fd407a730eb7b17[m
+Author: AHADBAVA <ahaddesgins@gmail.com>
+Date:   Tue Feb 27 13:47:22 2024 +0530
+
+    contact form back end connected
+
+[33mcommit d8e0e81db6096a263164c21bc2056c1a27cd446c[m[33m ([m[1;32mmaster[m[33m)[m
+Author: AHADBAVA <ahaddesgins@gmail.com>
+Date:   Tue Feb 27 13:03:53 2024 +0530
+
+    logo changed
+
+[33mcommit d44c56eee4bcad1d5eb2f03e451e31967233ed19[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: AHADBAVA <ahaddesgins@gmail.com>
+Date:   Tue Feb 27 12:37:32 2024 +0530
+
+    initial commit

@@ -331,15 +331,16 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
+  background-size: cover;
   height: 80vh;
-  background-color: black;
+  background:url('/assets/img/medium-shot-man-working-laptop.jpg');
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.595);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -597,6 +598,9 @@ section {
   padding: 40px 30px;
   width: 100%;
   border: 1px solid #eef0ef;
+}
+.icon-box:hover{
+  border-radius: 20px;
 }
 
 .why-us .icon-boxes .icon-box i {
@@ -949,7 +953,7 @@ section {
   position: fixed;
   z-index: 9999;
   margin: auto;
-  width: 90%; /* Adjusted for responsiveness */
+  width: 25%; /* Adjusted for responsiveness */
   max-width: 500px; /* Limit maximum width */
   display: flex;
   backdrop-filter: blur(10px);
@@ -1020,7 +1024,7 @@ section {
 
 .formclosebutton{
   margin-top: -550px;
-  margin-right: -480px;
+  margin-right: -380px;
   border: none;
   background-color: red;
   width: 50px;
@@ -1052,7 +1056,7 @@ section {
 .support-btn:hover::before{
   content: "Contact us";
   width: 100px;
-  background-color: rgb(41, 41, 41);
+  background-color: rgba(41, 41, 41, 0.422);
   color: white;
   display: flex;
   justify-content: center;
